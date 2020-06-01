@@ -4,6 +4,20 @@
 	<title>Code Golf</title>
 </head>
 <body>
+	<h1>Are you up for the challenge?</h1>
+
+	<p>Welcome to Code Golf! The aim of this challenge is to solve the problem bellow in as few characters as possible using Haskell.</p>
+
+	<p>Given data type Stream represents the infinite sequence of repeated characters such as: a, a, a, a, a, a, a, b, c, d, e, e, e, e, e, b, b, b ... 
+	<br> Suppose we are able to encode the infinite sequence into a sequence of pairs (x,n) where n is the number of consequtive repetitions of x. The above example is encoded with: (a, 7), (b, 1), (c, 1), (d, 1), (e, 5), (b, 4), ... ,
+	<br> Write a decode method that given an encoded sequence of a stream it returns a stream - initial flow.
+	</p>
+
+	<p>data Stream a = Cons (a, Stream a)</p>
+
+	<p>decode :: Stream (a, Int) -> Stream a</p>
+
+	<p>If you're up for the challenge clone this git repository (https://github.com/Pompey21/Code-Golf.git) and commit your haskell file with your name (so we can distinguish them) by the end of the week.</p>
 
 </body>
 </html> 
